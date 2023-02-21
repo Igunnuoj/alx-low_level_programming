@@ -1,5 +1,3 @@
-vi 2-print_alphabet_x10.c
-
 #include "main.h"
 /**
  * print_alphabet_x10 - prints all alphabets in lowercase 10 times.
