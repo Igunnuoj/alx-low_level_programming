@@ -1,4 +1,3 @@
-vi main.h
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -12,4 +11,3 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 
 #endif
-
