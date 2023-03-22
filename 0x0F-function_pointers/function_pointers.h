@@ -1,29 +1,8 @@
-#include "function_pointers.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include "function_pointers.h"
+#ifndef function_pointers_h
+#define function_pointers_h
 
-	/**
-	 * print_name - print name using pointer to function
-	 * @name: string to add
-	 * @f: pointer to function
-	 * Return: nothing
-	 **/
-	void print_name(char *name, void (*f)(char *))
-	{
-		if (name == NULL || f == NULL)
-		return;
+void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, size_t size, void (*action)(int));
+int int_index(int *array, int size, int (*cmp)(int));
 
-/**
- * print_name - print the name
- * @name: name to print
- * @f: function to use
- */
-
-void print_name(char *name, void (*f)(char *))
-{
-	if (name != NULL && f != NULL)
-		f(name);
-	}
-
-}
+#endif
